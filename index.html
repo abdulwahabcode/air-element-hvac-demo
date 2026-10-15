@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Element Hvac Services LLC | HVAC in San Tan Valley, AZ</title>
+<meta name="description" content="Air Element Hvac Services LLC — AC repair, installation, and heating service in San Tan Valley, AZ. Free estimates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --slate:#1C1F24; --slate2:#24282F; --steel:#3A4452; --gray:#9AA3AD;
+  --cream:#F2EEE7; --cream2:#E9E3D5; --brass:#C79C5A; --brass-d:#A87F42;
+  --off:#E2E8F0; --ink:#23262B;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.04em;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:rgba(28,31,36,.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--brass)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 22px;max-width:1140px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--off);font-family:'Oswald',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.06em}
+.brand .mark{width:34px;height:34px;flex:none;border:2px solid var(--brass);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.brand .mark svg{width:20px;height:20px;stroke:var(--brass);fill:none;stroke-width:2}
+.links{display:none;gap:30px}
+.links a{color:var(--gray);text-decoration:none;font-size:.88rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.links a:hover{color:var(--brass)}
+.cta-nav{background:var(--brass);color:#1C1F24;text-decoration:none;font-weight:700;font-size:.88rem;padding:11px 24px;border-radius:4px;display:none;text-transform:uppercase;letter-spacing:.06em}
+.cta-nav:hover{background:var(--brass-d);color:#fff}
+.burger{background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:var(--off);margin:5px 0}
+@media(min-width:860px){.links,.cta-nav{display:flex}.burger{display:none}}
+.mobile-menu{display:none;background:var(--slate2);border-top:1px solid #343a44}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:14px 26px;color:var(--off);text-decoration:none;font-weight:600;text-transform:uppercase;font-size:.88rem;letter-spacing:.08em;border-bottom:1px solid #2e333b}
+/* HERO */
+.hero{background:radial-gradient(110% 80% at 15% 0%, #2A3038 0%, var(--slate) 60%),var(--slate);color:var(--off);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;bottom:-60px;width:340px;height:340px;border:26px solid rgba(199,156,90,.12);border-radius:50%}
+.hero .wrap{display:grid;gap:34px;padding:74px 22px 84px;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--brass);font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--brass)}
+.hero h1{font-size:clamp(2.4rem,8vw,4rem);font-weight:700;color:var(--off)}
+.hero h1 .hl{color:var(--brass)}
+.hero p.lead{color:var(--gray);font-size:1.05rem;max-width:48ch;margin-top:16px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.btn-primary{background:var(--brass);color:#1C1F24;text-decoration:none;font-weight:700;padding:15px 32px;border-radius:4px;text-transform:uppercase;letter-spacing:.06em;font-size:.92rem}
+.btn-primary:hover{background:var(--brass-d);color:#fff}
+.btn-ghost{border:1px solid #4a515c;color:var(--off);text-decoration:none;font-weight:600;padding:15px 32px;border-radius:4px;text-transform:uppercase;letter-spacing:.06em;font-size:.92rem}
+.btn-ghost:hover{border-color:var(--brass);color:var(--brass)}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px;max-width:560px}
+.spec{border-left:3px solid var(--brass);padding-left:14px}
+.spec .v{font-family:'Oswald',sans-serif;font-size:1.4rem;font-weight:700;color:var(--off)}
+.spec .k{font-size:.76rem;color:var(--gray);text-transform:uppercase;letter-spacing:.1em}
+@media(min-width:920px){.hero .wrap{padding:110px 22px}}
+/* SECTIONS */
+section{padding:74px 0}
+.kicker{color:var(--brass-d);font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:12px}
+h2.title{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:600;margin-bottom:10px;color:var(--slate)}
+.sub{color:#5b626b;max-width:58ch}
+/* SERVICES */
+.svc-grid{display:grid;gap:16px;margin-top:36px}
+.svc{background:#fff;border-radius:6px;padding:26px 24px;border-top:4px solid var(--steel);box-shadow:0 4px 14px rgba(28,31,36,.06)}
+.svc:hover{border-top-color:var(--brass)}
+.svc .row{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.svc .ico{width:46px;height:46px;flex:none;background:var(--slate);border-radius:6px;display:flex;align-items:center;justify-content:center}
+.svc .ico svg{width:24px;height:24px;stroke:var(--brass);fill:none;stroke-width:1.8}
+.svc h3{font-size:1.02rem;color:var(--slate)}
+.svc p{font-size:.92rem;color:#5b626b}
+@media(min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+/* WHY — dark slate */
+.why{background:var(--slate);color:var(--off)}
+.why h2.title{color:var(--off)}
+.why .sub{color:var(--gray)}
+.why .kicker{color:var(--brass)}
+.why-grid{display:grid;gap:16px;margin-top:36px}
+.why-card{background:var(--slate2);border:1px solid #343a44;border-radius:6px;padding:26px;border-left:4px solid var(--brass)}
+.why-card h3{font-size:1rem;color:var(--off);margin-bottom:8px}
+.why-card p{font-size:.92rem;color:var(--gray)}
+@media(min-width:700px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+/* AREA */
+.area-towns{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:30px}
+.town{background:#fff;border:1px solid #D9D2C0;border-radius:4px;padding:14px 18px;font-weight:600;font-size:.93rem;color:var(--slate);display:flex;align-items:center;gap:10px}
+.town::before{content:"";width:8px;height:8px;background:var(--brass);border-radius:50%;flex:none}
+@media(min-width:700px){.area-towns{grid-template-columns:repeat(4,1fr)}}
+/* CONTACT */
+.contact{background:var(--cream2)}
+.contact-grid{display:grid;gap:22px;margin-top:34px}
+.info{background:var(--slate);color:var(--off);border-radius:6px;padding:30px}
+.info h3{font-size:1.15rem;color:var(--brass);margin-bottom:16px}
+.info-row{display:flex;gap:12px;margin-bottom:14px;font-size:.95rem;color:var(--gray);align-items:flex-start}
+.info-row a{color:var(--off);text-decoration:none;font-weight:600}
+.info-row a:hover{color:var(--brass)}
+form{background:#fff;border-radius:6px;padding:30px;box-shadow:0 6px 20px rgba(28,31,36,.08)}
+form h3{font-size:1.2rem;color:var(--slate);margin-bottom:6px}
+form p{font-size:.9rem;color:#5b626b;margin-bottom:16px}
+label{display:block;font-size:.84rem;font-weight:600;margin:12px 0 6px;text-transform:uppercase;letter-spacing:.06em;font-size:.76rem}
+input,textarea,select{width:100%;padding:12px 14px;border:1px solid #CFC8B4;border-radius:4px;font:inherit;background:#FDFCF9;max-width:100%}
+textarea{min-height:96px;resize:vertical}
+button[type=submit]{margin-top:18px;background:var(--brass);color:#1C1F24;border:0;font-weight:700;font-size:.95rem;padding:15px;border-radius:4px;cursor:pointer;width:100%;text-transform:uppercase;letter-spacing:.08em}
+button[type=submit]:hover{background:var(--brass-d);color:#fff}
+@media(min-width:920px){.contact-grid{grid-template-columns:.9fr 1.1fr}}
+/* FOOTER */
+footer{background:var(--slate);color:var(--gray);padding:26px 0;font-size:.84rem;border-top:1px solid #343a44}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#top"><span class="mark"><svg viewBox="0 0 24 24"><path d="M12 3v18M12 3c-4 3-6 6-6 9a6 6 0 0012 0c0-3-2-6-6-9z"/></svg></span>Air Element HVAC</a>
+    <nav class="links"><a href="#services">Services</a><a href="#why">Why Us</a><a href="#area">Service Area</a><a href="#contact">Contact</a></nav>
+    <a class="cta-nav" href="#contact">Free Estimate</a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('mmenu').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mmenu"><a href="#services">Services</a><a href="#why">Why Us</a><a href="#area">Service Area</a><a href="#contact">Contact</a></div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow reveal">San Tan Valley, Arizona</div>
+      <h1 class="reveal">Cool air. Hot deserts. <span class="hl">Zero compromise.</span></h1>
+      <p class="lead reveal">Air Element Hvac Services LLC keeps Arizona homes comfortable through brutal summers and chilly desert nights — fast AC repair, honest installs, and maintenance that prevents breakdowns.</p>
+      <div class="hero-btns reveal">
+        <a class="btn-primary" href="#contact">Get a Free Quote</a>
+        <a class="btn-ghost" href="mailto:Airelementhvac@gmail.com">Email Us</a>
+      </div>
+      <div class="specs reveal">
+        <div class="spec"><div class="v">Same-day</div><div class="k">AC repair visits</div></div>
+        <div class="spec"><div class="v">Free</div><div class="k">System estimates</div></div>
+        <div class="spec"><div class="v">Local</div><div class="k">AZ desert experts</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="kicker reveal">Services</div>
+    <h2 class="title reveal">Full-service heating &amp; cooling</h2>
+    <p class="sub reveal">From emergency no-cool calls to full system replacements — diagnosed properly, fixed once.</p>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2v20M4 6l16 12M20 6L4 18M2 12h20M6 4l12 16M18 4L6 20"/></svg></div><h3>AC Repair</h3></div><p>Fast diagnosis and repair for no-cool calls, weak airflow, strange noises, and frozen coils — most fixes completed same visit.</p></div>
+      <div class="svc reveal"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 10h18v10H3zM7 10V6a5 5 0 0110 0v4"/></svg></div><h3>AC Installation &amp; Replacement</h3><p>Right-sized new systems for Arizona heat — load-calculated, permitted, and installed clean, with old equipment hauled away.</p></div>
+      <div class="svc reveal"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c-4 4-7 7-7 11a7 7 0 0014 0c0-4-3-7-7-11zM12 21v-6"/></svg></div><h3>Heating Service</h3><p>Furnace and heat-pump tune-ups and repairs so desert winter nights stay warm — safe, efficient, and quiet.</p></div>
+      <div class="svc reveal"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M14 7l-5 5 5 5M20 7l-5 5 5 5"/></svg></div><h3>Preventative Maintenance</h3><p>Seasonal checkups that catch small problems before July does: coil cleaning, refrigerant checks, electrical testing, filter service.</p></div>
+      <div class="svc reveal"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 14c2-1 3-4 3-7m6 9c-2-1-3-4-3-7m6 9c2-1 3-4 3-7M12 18v3"/></svg></div><h3>Indoor Air Quality</h3><p>Filtration, UV lights, and humidity control that cut dust, allergens, and that stale-air feeling — breathe easier at home.</p></div>
+      <div class="svc reveal"><div class="row"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 8h13a4 4 0 014 4v0a4 4 0 01-4 4H6a3 3 0 01-3-3zM7 12h.01"/></svg></div><h3>Duct Service &amp; Sealing</h3><p>Leaky ducts waste up to 30% of your cooling — we inspect, seal, and repair ductwork so every room gets its share.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="kicker reveal">Why Air Element</div>
+    <h2 class="title reveal">Built for Arizona summers</h2>
+    <p class="sub reveal">Desert HVAC is its own trade. We work in it every day.</p>
+    <div class="why-grid">
+      <div class="why-card reveal"><h3>Licensed &amp; insured</h3><p>Properly licensed Arizona contractors — your home and system are protected on every job.</p></div>
+      <div class="why-card reveal"><h3>Honest diagnosis, upfront pricing</h3><p>We show you what's wrong and what it costs before we touch a wrench. Repair when it makes sense, replace when it doesn't.</p></div>
+      <div class="why-card reveal"><h3>Fast response in the heat</h3><p>No-cool calls get priority scheduling — because in July, waiting three days isn't an option.</p></div>
+      <div class="why-card reveal"><h3>Local, not a call center</h3><p>Based in San Tan Valley — you talk to the people who'll actually show up at your door.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <div class="kicker reveal">Service area</div>
+    <h2 class="title reveal">Serving the Southeast Valley</h2>
+    <p class="sub reveal">Headquartered in San Tan Valley, on the road across Pinal and Maricopa counties.</p>
+    <div class="area-towns reveal">
+      <span class="town">San Tan Valley</span><span class="town">Queen Creek</span><span class="town">Florence</span><span class="town">Apache Junction</span><span class="town">Mesa</span><span class="town">Gilbert</span><span class="town">Coolidge</span><span class="town">Gold Canyon</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker reveal">Contact</div>
+    <h2 class="title reveal">Get your free estimate</h2>
+    <p class="sub reveal">AC out? System aging? Tell us what's going on — we'll respond fast.</p>
+    <div class="contact-grid">
+      <div class="info reveal">
+        <h3>Air Element Hvac Services LLC</h3>
+        <div class="info-row"><span>📍</span><span>San Tan Valley, Arizona</span></div>
+        <div class="info-row"><span>✉️</span><span><a href="mailto:Airelementhvac@gmail.com">Airelementhvac@gmail.com</a></span></div>
+        <div class="info-row"><span>🕒</span><span>Mon–Sat, 8:00 am – 6:00 pm · Emergency calls prioritized</span></div>
+        <div class="info-row"><span>❄️</span><span>Free estimates · Same-day repair available</span></div>
+      </div>
+      <form class="reveal" id="quoteForm">
+        <h3>Free Quote Request</h3>
+        <p>Fill this out — it opens an email to us. Just hit send.</p>
+        <label for="qname">Your name</label><input id="qname" name="name" required placeholder="Jane Doe">
+        <label for="qemail">Your email</label><input id="qemail" name="email" type="email" required placeholder="you@email.com">
+        <label for="qservice">Service needed</label>
+        <select id="qservice" name="service"><option>AC Repair</option><option>AC Installation &amp; Replacement</option><option>Heating Service</option><option>Preventative Maintenance</option><option>Indoor Air Quality</option><option>Duct Service &amp; Sealing</option></select>
+        <label for="qmsg">What's going on?</label><textarea id="qmsg" name="message" placeholder="e.g. AC blowing warm air since yesterday, unit is about 12 years old…"></textarea>
+        <button type="submit">Send Quote Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Air Element Hvac Services LLC · San Tan Valley, AZ</span>
+    <span>Demo by Wahab Codes</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target;
+  var subject=encodeURIComponent('Free Quote Request — '+f.service.value);
+  var body=encodeURIComponent('Name: '+f.name.value+'\nEmail: '+f.email.value+'\nService: '+f.service.value+'\n\nDetails:\n'+f.message.value);
+  window.location.href='mailto:Airelementhvac@gmail.com?subject='+subject+'&body='+body;
+});
+document.querySelectorAll('#mmenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mmenu').classList.remove('open')})});
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
